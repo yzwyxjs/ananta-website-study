@@ -87,7 +87,7 @@ onMounted(() => {
             v-for="(item, index) in navItems"
             :key="item.key"
             class="item"
-            :style="{ '--item-index': index } as Record<string, unknown>"
+            :style="({ '--item-index': index } as any)"
             href="javascript:void(0)"
             @click="handleNavClick(item.key)"
           >

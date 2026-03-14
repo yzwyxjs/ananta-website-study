@@ -270,7 +270,7 @@ function handleGalleryClick(roleId: string) {
 
 /** 塔菲对话气泡子时间线注入主时间线 */
 function onTafeiTimelineCreated(timelines: gsap.core.Timeline[]) {
-  if (mainTimeline && timelines[0]) {
+  if (mainTimeline && timelines.length > 0) {
     mainTimeline.add(timelines[0], 'dycOut+=1.2')
   }
 }
