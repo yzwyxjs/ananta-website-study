@@ -1,0 +1,52 @@
+/**
+ * 全局样式入口
+ * 引入 reset、字体、以及页面级全局样式
+ */
+
+@use './reset';
+@use './fonts';
+@use './variables' as *;
+
+/* ====== rem 基准设置 ====== */
+/* 原站采用 1rem = 视口宽度 / 100 的方案
+ * 即在 1920px 宽度下 1rem ≈ 19.2px
+ * 这里通过 JS 在 main.ts 中动态设置 html font-size
+ */
+html {
+  font-family: $font-family-base;
+}
+
+html, body {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  background: $color-bg;
+  color: #eee;
+  font-family: $font-family-base;
+}
+
+body {
+  font-size: 0.16rem;
+  overflow-x: hidden;
+}
+
+/* ====== Lenis 平滑滚动所需的全局样式 ====== */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}

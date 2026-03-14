@@ -1,0 +1,90 @@
+/**
+ * 字体定义 — 全部使用本地字体文件（避免 CORS 问题）
+ * 包含：Noto Sans SC（中文）、MiSans（正文）、HYQiHei（标题）、ANANTA（英文装饰）
+ */
+
+/* ====== Noto Sans SC（简体中文） ====== */
+@font-face {
+  font-family: 'Noto Sans SC';
+  src: url('@/assets/fonts/noto-sans-sc-v26-latin_chinese-simplified-300.woff2') format('woff2');
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Noto Sans SC';
+  src: url('@/assets/fonts/noto-sans-sc-v26-latin_chinese-simplified-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Noto Sans SC';
+  src: url('@/assets/fonts/noto-sans-sc-v26-latin_chinese-simplified-500.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Noto Sans SC';
+  src: url('@/assets/fonts/noto-sans-sc-v26-latin_chinese-simplified-700.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* ====== MiSans（小米字体，正文主力） ====== */
+@font-face {
+  font-family: 'MiSans';
+  src: url('@/assets/fonts/MiSans-Light.woff2') format('woff2');
+  font-weight: 250;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'MiSans';
+  src: url('@/assets/fonts/MiSans-Regular.woff2') format('woff2');
+  font-weight: 330;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'MiSans';
+  src: url('@/assets/fonts/MiSans-Demibold.woff2') format('woff2');
+  font-weight: 450;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'MiSans';
+  src: url('@/assets/fonts/MiSans-Bold.woff2') format('woff2');
+  font-weight: 630;
+  font-display: swap;
+}
+
+/* ====== HYQiHei（汉仪旗黑，用于大标题） ====== */
+@font-face {
+  font-family: 'HYQiHei';
+  src: url('@/assets/fonts/HYQiHei-50S.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'HYQiHei';
+  src: url('@/assets/fonts/HYQiHei-90S_23b4a5e1.woff2') format('woff2');
+  font-weight: 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'HYQiHei';
+  src: url('@/assets/fonts/HYQiHei-105J.woff2') format('woff2');
+  font-weight: 1000;
+  font-display: swap;
+}
+
+/* ====== ANANTA（游戏专属英文装饰字体） ====== */
+@font-face {
+  font-family: 'ANANTA';
+  src: url('@/assets/fonts/ANANTA_ee89c025.woff') format('woff');
+  font-display: swap;
+}
+
+/* ====== MiSans-Demibold-nm（预约数字专用） ====== */
+@font-face {
+  font-family: 'MiSans-Demibold-nm';
+  src: url('@/assets/fonts/MiSans-Demibold-nm_57150126.woff') format('woff');
+  font-display: swap;
+}

@@ -1,0 +1,37 @@
+/**
+ * 全局 SCSS 变量定义
+ * 颜色、字体、间距、动画参数等统一管理
+ */
+
+/* ====== 主题色 ====== */
+$color-primary: #D62032;
+$color-primary-hover: #B81A29;
+$color-bg: #181818;
+$color-bg-dark: #141414;
+$color-bg-light: #191919;
+$color-text: #F7F7F7;
+$color-text-secondary: #F9F9F9;
+$color-text-dark: #222225;
+$color-mask: rgba(0, 0, 0, 0.8);
+
+/* ====== 字体 ====== */
+$font-family-base: 'MiSans', 'Noto Sans SC', sans-serif;
+$font-family-title: 'HYQiHei', 'MiSans', sans-serif;
+$font-family-en: 'ANANTA', sans-serif;
+
+/* ====== 层级 ====== */
+$z-loading: 9999;
+$z-gallery: 1000;
+$z-side-nav: 99;
+$z-top-bar: 9;
+$z-section-fixed: 9;
+
+/* ====== 动画 ====== */
+$ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+$ease-power3-out: cubic-bezier(0.215, 0.61, 0.355, 1);
+$transition-fast: 0.3s;
+$transition-normal: 0.5s;
+
+/* ====== 资源 CDN 前缀 ====== */
+$cdn-base: 'https://ananta.res.netease.com/pc/gw/20250901145208';
+$cdn-assets: '#{$cdn-base}/assets';
