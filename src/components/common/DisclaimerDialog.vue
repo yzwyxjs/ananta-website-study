@@ -57,6 +57,7 @@ function handleClose() {
 </template>
 
 <style scoped lang="scss">
+@use 'sass:color';
 .disclaimer-overlay {
   position: fixed;
   inset: 0;
@@ -117,7 +118,7 @@ function handleClose() {
   height: 0.52rem;
   border: none;
   border-radius: 0.06rem;
-  background: linear-gradient(135deg, $color-primary, darken($color-primary, 8%));
+  background: linear-gradient(135deg, $color-primary, color.adjust($color-primary, $lightness: -8%));
   color: #fff;
   font-size: 0.18rem;
   font-weight: 450;
@@ -127,7 +128,7 @@ function handleClose() {
   box-shadow: 0 0.04rem 0.16rem rgba(214, 32, 50, 0.3);
 
   &:hover {
-    background: linear-gradient(135deg, lighten($color-primary, 4%), $color-primary);
+    background: linear-gradient(135deg, color.adjust($color-primary, $lightness: 4%), $color-primary);
     transform: translateY(-1px);
     box-shadow: 0 0.06rem 0.2rem rgba(214, 32, 50, 0.4);
   }
