@@ -27,6 +27,8 @@ const emit = defineEmits<{
   scrollToSection: [section: string]
 }>()
 
+const GITHUB_URL = 'https://github.com/yzwyxjs/ananta-website-study'
+
 const navItems = [
   { label: '首页', key: 'home' },
   { label: '角色', key: 'role' },
@@ -92,6 +94,15 @@ onMounted(() => {
             @click="handleNavClick(item.key)"
           >
             <span class="txt">{{ item.label }}</span>
+          </a>
+          <a
+            class="item"
+            :style="({ '--item-index': navItems.length } as any)"
+            :href="GITHUB_URL"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="txt">GitHub 仓库</span>
           </a>
         </div>
       </div>

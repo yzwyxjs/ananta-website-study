@@ -23,6 +23,8 @@ const appStore = useAppStore()
 const topBarRef = ref<HTMLElement>()
 const logoSrc = cdnUrl('assets/logo-white_08ada2b5.png')
 
+const GITHUB_URL = 'https://github.com/yzwyxjs/ananta-website-study'
+
 const navItems = [
   { label: '首页', key: 'home' },
   { label: '角色', key: 'role' },
@@ -65,6 +67,9 @@ onMounted(() => {
           @click="handleNavClick(item.key)"
         >
           {{ item.label }}
+        </a>
+        <a class="nav-item" :href="GITHUB_URL" target="_blank" rel="noopener noreferrer">
+          GitHub
         </a>
       </nav>
     </div>
