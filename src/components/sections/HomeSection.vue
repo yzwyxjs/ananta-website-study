@@ -119,7 +119,7 @@ onMounted(() => {
 
         <div ref="reserveBtnCntRef" class="reserve-btn-cnt">
           <div class="blur-bg" />
-          <button class="reserve-btn" @click="emit('showDisclaimer')">立即预约</button>
+          <button class="reserve-btn" @click="emit('showDisclaimer')">点击预约</button>
         </div>
 
         <!-- 滚动提示箭头 -->
@@ -179,9 +179,9 @@ onMounted(() => {
 /* 中央内容区域 */
 .center-content {
   position: absolute;
-  top: 4.15rem;
+  top: calc(1.65rem + 50%);
   left: 50%;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   align-items: center;
